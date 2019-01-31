@@ -4,6 +4,7 @@ class CreateComments < ActiveRecord::Migration[5.2]
       t.text :content
       t.belongs_to :user
       t.belongs_to :gossip
+      t.references :maincomment, index: true
       t.timestamps
     end
   end
