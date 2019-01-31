@@ -21,4 +21,4 @@
 
   *Note: dans un tout autre registre, ne pas oublier le bundle install avant de tester.*
 
-  ![Alt text](./../gossip_logo.jpeg?raw=true "Title")
+  ![Gossip_logo](gossip_logo.png)
