@@ -44,11 +44,9 @@ end
   tag = Tag.create!(title: Faker::RockBand.name)
 end
 
-=begin
 20.times do
   comment = Comment.create!(content: Faker::Seinfeld.quote, user_id:(rand(User.first.id..User.last.id)), gossip_id:(rand(Gossip.first.id..Gossip.last.id)))
 end
-=end
 
 =begin
 20.times do
