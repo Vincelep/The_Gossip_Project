@@ -48,11 +48,9 @@ end
   comment = Comment.create!(content: Faker::Seinfeld.quote, user_id:(rand(User.first.id..User.last.id)), gossip_id:(rand(Gossip.first.id..Gossip.last.id)))
 end
 
-=begin
 20.times do
-  like = Like.create!(user_id:(rand(User.first.id..User.last.id)), gossip_id:(rand(Gossip.first.id..Gossip.last.id)))
+  like = Like.create!(user_id:(rand(User.first.id..User.last.id)), imageable_id:(rand(Imageable.first.id..Imageable.last.id)))
 end
-=end
 
 20.times do
   private_message = PrivateMessage.create!(content: Faker::PrincessBride.quote, sender_id:(rand(User.first.id..User.last.id)))
